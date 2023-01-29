@@ -233,6 +233,7 @@ namespace Downloader.Sample
         }
         private static void OnDownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
+            // var package = (sender as DownloadService).Package;
             ConsoleProgress?.Tick(10000);
 
             if (e.Cancelled)
